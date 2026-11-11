@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://scsplab.com/publications.html">
 <link rel="canonical" href="https://scsplab.com/publications.html">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232457A7'/%3E%3Ccircle cx='11' cy='12' r='4' fill='white'/%3E%3Ccircle cx='21' cy='11' r='3' fill='white' fill-opacity='.7'/%3E%3Ccircle cx='17' cy='21' r='5' fill='white' fill-opacity='.85'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="50" cy="50" r="47" fill="%23FFFFFF"/%3E%3Ccircle cx="50" cy="50" r="43" fill="none" stroke="%2315233D" stroke-width="6"/%3E%3Cline x1="30.5" y1="69" x2="30.5" y2="57" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="36.1" y1="69" x2="36.1" y2="50" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="41.7" y1="69" x2="41.7" y2="54" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="47.3" y1="69" x2="47.3" y2="36" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="52.9" y1="69" x2="52.9" y2="47" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="58.5" y1="69" x2="58.5" y2="29" stroke="%23E8812F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="64.1" y1="69" x2="64.1" y2="52" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="69.7" y1="69" x2="69.7" y2="59" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="25" y1="73" x2="75" y2="73" stroke="%2315233D" stroke-width="3" stroke-linecap="round"/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
@@ -92,6 +92,11 @@ h3{margin:0 0 8px;font-size:19px;line-height:1.35}
 .outcomes ul{margin:0;padding-left:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 32px;font-size:15.5px}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (max-width:900px){.plan-top{grid-template-columns:1fr}.transfer{width:auto;flex-direction:row}.transfer svg{transform:rotate(90deg)}.aim3 .aim-l{columns:1}.outcomes ul{grid-template-columns:1fr}}
+.subnav{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 12px}
+.subnav a{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--text);text-decoration:none;font-size:14.5px;font-weight:500}
+.subnav a:hover{border-color:var(--accent);color:var(--accent-dark)}
+.grp{margin:48px 0 18px;font-size:22px;padding-bottom:10px;border-bottom:2px solid var(--line);scroll-margin-top:90px}
+.empty-grp{margin:0;color:var(--muted)}
 .cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px 24px}
 section.alt .card{background:var(--bg)}
@@ -115,7 +120,7 @@ section.alt .card{background:var(--bg)}
 
 .pi .ko{font-size:17px;font-weight:500;color:var(--muted);margin-left:6px}
 .bio{margin:0 0 24px;max-width:46em}
-.cv{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid var(--line);padding-top:22px}
+.cv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;border-top:1px solid var(--line);padding-top:22px}
 .cv h4{margin:0 0 10px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
 .cv ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:14.5px;line-height:1.5}
 .cv li span{display:block;font-weight:600;font-size:13px;color:var(--muted)}
@@ -175,6 +180,17 @@ footer{background:var(--text);color:#fff}
 }
 
 /* multi-page */
+.news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.news li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:24px;padding:24px 0;border-top:1px solid var(--line)}
+.news li:last-child{border-bottom:1px solid var(--line)}
+.news time{font-weight:700;color:var(--accent)}
+.news h3{margin:0 0 6px;font-size:18px}
+.news p{margin:0;color:var(--muted);font-size:15.5px}
+@media (max-width:640px){.news li{grid-template-columns:1fr;gap:6px}}
+.brand-mark{width:44px;height:44px}
+.brand-name{font-weight:400;font-size:21px;letter-spacing:0;color:#15233D}
+.brand-name b{font-weight:800}
+.brand-sub{color:#4A5568}
 h1.page-h{margin:0 0 14px;font-size:clamp(30px,3.4vw,40px);line-height:1.2;letter-spacing:-.01em}
 nav a[aria-current="page"]{color:var(--accent-dark);background:var(--tint)}
 .hero{min-height:calc(100vh - 160px);display:flex;align-items:center}
@@ -199,17 +215,20 @@ main section{border-bottom:none}
 <header>
   <div class="wrap bar">
     <a class="brand" href="index.html" aria-label="SCSP Lab home">
-      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#2457A7"/><circle cx="11" cy="12" r="4" fill="#fff"/><circle cx="21" cy="11" r="3" fill="#fff" fill-opacity=".7"/><circle cx="17" cy="21" r="5" fill="#fff" fill-opacity=".85"/></svg>
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="43" fill="none" stroke="#15233D" stroke-width="6"/><line x1="30.5" y1="69" x2="30.5" y2="57" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="36.1" y1="69" x2="36.1" y2="50" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="41.7" y1="69" x2="41.7" y2="54" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="47.3" y1="69" x2="47.3" y2="36" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="52.9" y1="69" x2="52.9" y2="47" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="58.5" y1="69" x2="58.5" y2="29" stroke="#E8812F" stroke-width="3.4" stroke-linecap="round"/><line x1="64.1" y1="69" x2="64.1" y2="52" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="69.7" y1="69" x2="69.7" y2="59" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="25" y1="73" x2="75" y2="73" stroke="#15233D" stroke-width="3" stroke-linecap="round"/></svg>
       <span class="brand-text">
-        <span class="brand-name">SCSP Lab</span>
-        <span class="brand-sub">KAIST Graduate School of Medical Science and Engineering</span>
+        <span class="brand-name"><b>SCSP</b> Lab</span>
+        <span class="brand-sub">Single-Cell &amp; Spatial Proteomics</span>
       </span>
     </a>
     <nav aria-label="Main">
       <ul>
         <li><a href="research.html">Research</a></li>
-        <li><a href="people.html">People</a></li>
+        <li><a href="highlights.html">Research Highlights</a></li>
+        <li><a href="members.html">Members</a></li>
         <li><a href="publications.html" aria-current="page">Publications</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="news.html">News</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -220,36 +239,8 @@ main section{border-bottom:none}
 <section id="publications">
   <div class="wrap">
     <h1 class="page-h">Publications</h1>
-    <h3 class="pub-h">Research highlights</h3>
-<div class="themes">
-<article class="theme"><div class="theme-head"><span class="theme-num">01</span><h4>Mass spectrometry-based proteomics technology</h4></div><p class="theme-desc">Dr. Mun developed ultra-high-pressure multidimensional liquid chromatography systems, online phosphopeptide enrichment, and methods to analyze phospho- and glycoproteomes from limited amounts of clinical samples. He also contributed to data acquisition and interpretation algorithms that improve the accuracy and sensitivity of mass spectrometry data, and to automated sample preparation workflows that process large clinical sample sets reproducibly with minimal hands-on work. These technologies enable sensitive, in-depth proteome analysis from limited clinical material.</p><p class="theme-label">Representative publications</p><ul class="theme-pubs">
-<li><strong>Mun, D.-G.*</strong>, Nam, D.*, Kim, H., Pandey, A., and Lee, S.-W. Accurate precursor mass assignment improves peptide identification in data-independent acquisition mass spectrometry. Analytical Chemistry. 2019, 91, 8453-8460.</li>
-<li><strong>Mun, D.-G.</strong>, Renuse, S., Saraswat, M., Madugundu, A., Udainiya, S., Kim, H., Park, S. R., Zhao, H., Nirujogi, R. S., Na, C. H., Kannan, N., Yates J. R., Lee, S.-W., and Pandey, A. PASS-DIA: A data-independent acquisition approach for discovery studies. Analytical Chemistry. 2020, 92, 14466-14475.</li>
-<li><strong>Mun, D.-G.*</strong>, Joshi, N. S.*, Budhraja, R., Sachdeva, G. S., Kang, T., Bhat, F. A., Ding, H., Madden, B. J., Zhong, J., and Pandey, A. Automated sample preparation workflow for tandem mass tag-based proteomics. Journal of the American Society for Mass Spectrometry. 2023, 34, 2087-2092.</li>
-</ul></article>
-<article class="theme"><div class="theme-head"><span class="theme-num">02</span><h4>Proteogenomics for precision medicine</h4></div><p class="theme-desc">By integrating proteome, phosphoproteome, and glycoproteome data with genomic and transcriptomic data, he led the first proteogenomic study in Korea, a precision medicine study of early-onset gastric cancer that refined patient subtypes and identified the key signaling pathways defining each subtype. Proteogenomic analysis of cholangiocarcinoma, a highly aggressive cancer, revealed phosphoproteome-based subtypes not resolved by transcriptomics, and proteomic analysis of mouse models nominated subtype-specific therapeutic candidates. Advancing these methods further, he built a proteogenomic map of 28 primary human cell types, uncovering many previously undetected non-canonical and modified peptides.</p><p class="theme-label">Representative publications</p><ul class="theme-pubs">
-<li><strong>Mun, D.-G.*</strong>, Bhin, J.*, Kim, S.*, Kim, H.*, Jung, J.*, Jang, Y., Park J.-M., Kim, H., Lee, H., Bae, J., Back S., Kim, S.-J., Kim, J., Park, H., Li, H., Hwang, K.-B., Park, Y., Yook, J., Kim, B., Kwon, S.Y., Ryu, S.Y., Park, D.Y., Jeon, T.Y., Kim, D.H., Lee, J.-H., Han, S.-U., Song, K.S., Park, D., Park, J.W., Yu, M.-H., Lee, H., Kim, K.P., Yang, E.K., Kim, H.K., Paek, E., Lee, S., Lee, S.-W., and Hwang, D. Proteogenomic characterization of human early onset gastric cancer. Cancer Cell. 2019, 35, 111-124.</li>
-<li><strong>Mun, D.-G.*</strong>, Jessen, E.*, Tomlinson, J. K., Carlson, D., Budhraja, R., Alva-Ruiz, R., Abdelrahman, A., Watkins, R., Gregory, L., McCabe, C., Wang, C., Graham, R. P., Woods, K., Golkowski, M., Baker, M., Gores, G. J., Ilyas, S. I., Conboy, C., Larson, E. L., Sample, J. W., Ozmert, E. H., Kandasamy, R. K., Borad, M. J., Roberts, L., Andersen, J., Pandey, A., and Smoot, R. L. Multiomics combined with machine learning defines unique molecular subtypes of cholangiocarcinoma and identifies TNK1 as a therapeutic target. Hepatology. 2025.</li>
-<li><strong>Mun, D.-G.</strong>, Madugundu, A. K., Renuse, S., Nirujogi, R. S., Na, C. H., Kim, M.-S., Saraswat, M., Singh, S., Ramarajan, M. G., Tiwary, S., Cox, J., Prakash, A., Halushka, M. K., Burns, K. H., Kandasamy, R. K., and Pandey, A. A transcriptomic and proteomic map of primary human cell types. Nucleic Acids Research. 2026. 54, gkaf1498.</li>
-</ul></article>
-<article class="theme"><div class="theme-head"><span class="theme-num">03</span><h4>Clinical proteomics and biomarker discovery</h4></div><p class="theme-desc">Applying quantitative proteomics to diverse clinical specimens, he characterized the host immune response to SARS-CoV-2 infection in nasopharyngeal swabs, Alzheimer&#8217;s disease-related proteome changes in cerebrospinal fluid, and aging-associated protein alterations in FFPE kidney tissue. He is currently developing biomarkers for the diagnosis of cholangiocarcinoma using patient blood and bile samples.</p><p class="theme-label">Representative publications</p><ul class="theme-pubs">
-<li><strong>Mun, D.-G.</strong>, Vanderboom, P. M., Madugundu, A. K., Garapati, K., Chavan, S., Peterson, J. A., Saraswat, M., and Pandey, A. DIA-based proteome profiling of nasopharyngeal swabs from COVID-19 patients. Journal of Proteome Research. 2021, 20, 4165-4175.</li>
-<li><strong>Mun, D.-G.</strong>, Budhraja, R., Bhat, F. A., Zenka, R. M., Johnson, K. L., Moghekar, A., and Pandey, A. Four-dimensional proteomics analysis of human cerebrospinal fluid with trapped ion mobility mass spectrometry using PASEF. Proteomics. 2023, 23, e2200507.</li>
-<li><strong>Mun, D.-G.</strong>, Pujari, G. P., Sachdeva, G., Madden, B. J., Charlesworth, M. C., Johnson, K., Archila, L. R., Alexander, M. P., Denic, A., Mullan, A. F., Sharma, V., Larson, N. B., Luehrs, A. C., Rule, A. D., and Pandey, A. Spatial proteomics to discover aging-associated alterations in the renal tubulointerstitium. Clinical Proteomics. 2025. 22, 37.</li>
-</ul></article>
-<article class="theme"><div class="theme-head"><span class="theme-num">04</span><h4>Single cell proteomics technology and applications</h4></div><p class="theme-desc">To improve proteome coverage and throughput in single cell proteomics, he advanced data acquisition and analysis to identify KRAS mutant peptides in single cancer cells and reported the first proteome and PTM analysis at the single nucleus level. He also developed a multiplexed method that identifies modified peptides across multiple single cells with improved sensitivity, and applied these technologies to single immune cells and salivary gland-derived cells. The same low-input methods extend to spatial proteomics: using laser capture microdissection (LCM), he profiled micro-regions of tissues including bile duct, gallbladder, and brain, generating cell-level proteome information that conventional approaches could not readily obtain.</p><p class="theme-label">Representative publications</p><ul class="theme-pubs">
-<li><strong>Mun, D.-G.</strong>, Bhat, F. A., Ding, H., Madden, B. J., Natesampillai, S., Badley, A.D., Johnson, K. L., Kelly, R. T., and Pandey, A. Optimizing single cell proteomics using trapped ion mobility spectrometry for label-free experiments. Analyst. 2023, 148, 3466-3475.</li>
-<li><strong>Mun, D.-G.</strong>, Bhat, F. A., Joshi, N. S., Sandoval, L., Ding, H., Jain, A., Peterson, J. A., Kang, T., Pujari, G. P., Tomlinson, J. L., Budhraja, R., Zenka, R. M., Kannan, N., Kipp, B. R., Dasari, S., Gaspar-Maia, A., Smoot, R. L., Kandasamy, R. K., and Pandey, A. Diversity of PTMs and cell signaling revealed by single cell and single organelle mass spectrometry. Communications Biology. 2024, 7, 884.</li>
-<li><strong>Mun, D.-G.*</strong>, Nishida, H.*, Bhat, F. A., Pasupuleti, R. R., Delanghe, B., and Pandey, A. Multiplexed quantitation of post-translationally modified peptides in single cells using triggered MS/MS combined with super heavy tandem mass tags. Journal of Proteome Research. 2026. 25, 1184.</li>
-</ul></article>
-</div>
-<details class="all"><summary>Manuscripts under review &amp; preprints (4)</summary><ul class="plist">
-<li><span class="st">In revision</span> Larson, E. L., Jessen, E., <strong>Mun, D.-G.</strong>, Tomlinson, J. K., Abdelrahman, A., Carlson, D., Salehinejad, H., Smoot, R. L. Feature selection and machine learning strategies to develop a minimal bioassay for cholangiocarcinoma subtype. Mayo Clinic Proceedings. 2026.</li>
-<li><span class="st">In revision</span> Kuipers, H., Carlson, D., Jessen, E., Abeynayake, A., Sample, J., <strong>Mun, D.-G.</strong>, Tomlinson, J. K., Abdelrahman, A., Werneburg, N., Li, B., Ozmert, E., Conboy, C., Borad, M., Truty, M., Pandey, A., Ilyas, S., Gores, G., Smoot, R L. The first-in-class SFK ‘OFF’ inhibitor NXP900 suppresses YAP signaling and demonstrates therapeutic efficacy in cholangiocarcinoma. Clinical Cancer Research. 2026.</li>
-<li><span class="st">Preprint</span> Ritting, M. L., Yang, W., Aalam, S. M. M., Zhao, H., Feng, L., Song, J., Dumbrava, M. G., Ismail, W. M., <strong>Mun, D.-G.</strong>, Hu, C., Roy, O., Chaludiya, K., Shi, G. X., Crasta, D. N., Schaufelberger, K., Janus, J. R., Kalthur, G., Weroha, S. J., Kaufmann, S. H., Sadanandam, A., Knapp, D. J. H. F., Wang, C., Pandey, A., Gaspar-Maia, A., Couch, F. J., Sherman, M. E., Bakkum-Gamez, J. N., Kannan, N. A rare multipotent peg-like epithelial cell is a candidate cell-of-origin for high-grade serous ovarian cancer. bioRxiv. 2025, 2025.09.23.677404.</li>
-<li><span class="st">Submitted</span> Nishida, H., Balaya, R. D. A., Bhat, F. A., Sachdeva, G., French, A. J., Moghekar, A., <strong>Mun, D.-G.</strong>, and Pandey, A. Mass spectrometry-based peptidomics approach for discovering novel neuropeptides from human cerebrospinal fluid. Genome Research. 2025.</li>
-</ul></details>
-<details class="all"><summary>Full list of publications (46)</summary>
+    <h3 class="pub-h">Journal articles</h3>
+<div class="pub-all">
 <h4 class="yr">2026</h4><ul class="plist">
 <li>Heo, S.*, Zhang, S.*, <strong>Mun, D.-G.*</strong>, Pandey, A., Bygrave, A. M., Huganir, R. L. Sex and experience dependent regulation of synaptic protein turnover. Proceedings of the National Academy of Sciences. 2026. 123, e2602111123.</li>
 <li>Garapati, K.*, <strong>Mun, D.-G.*</strong>, Balaya, R. D. A., Saraswat, M., Renuse, S., Trahan, G., Kandasamy, R.K., Deyle, D.R., Pandey, A. Proteomic alterations in patient-derived mesenchymal stem cells and their secretomes in osteogenesis imperfecta. Molecular Genetics and Metabolism Reports. 2026. 48, 101341.</li>
@@ -330,12 +321,12 @@ main section{border-bottom:none}
 <h4 class="yr">2010</h4><ul class="plist">
 <li>Jung, H.-J., Purvine, S. O., Kim, H., Petyuk, V. A., Hyung, S.-W., Monroe, M. E., <strong>Mun, D.-G.</strong>, Kim, K.-C., Park, J.-M., Kim, S.-J., Tolic, N., Slysz, G. W., Moore, R. J., Zhao, R., Adkins, J. N., Anderson, G. A., Lee, H., Camp II, D. G., Yu, M.-H., Smith, R. D., and Lee, S.-W. Integrated post-experiment monoisotopic mass refinement: An integrated approach to accurately assign monoisotopic precursor masses to tandem mass spectrometric data. Analytical Chemistry. 2010, 82, 8510-8518.</li>
 </ul>
-</details>
-<details class="all"><summary>Patents (3)</summary><ul class="plist">
+</div>
+<h3 class="pub-h" style="margin-top:44px">Patents</h3><ul class="plist">
 <li>Lee, S.-W., Hyung, S.-W., Lee, J. H., Kim, K.-C., <strong>Mun, D.-G.</strong>, Multi-functional selection valve, multi-functional and fully automated liquid chromatography device with the same, and sample analysis method using the same. US Patent (9,435,771 B2), 2016</li>
 <li>Paek, E., Lee, S.-W., Hwang, K.-B., Li, H., Kim, H., <strong>Mun, D.-G.</strong>, Method and system for identification and quantification of peptide considering noise of quantitative mass spectrometry analysis based on isobaric tag. Korea Patent (10-1768098), 2017</li>
 <li>Lee, S.-W., Hyung, S.-W., Lee, J. H., Kim, K.-C., <strong>Mun, D.-G.</strong>, Automated dual online multi-functional liquid chromatography device. Korea Patent (10-1120944), 2012</li>
-</ul></details>
+</ul>
   </div>
 </section>
 </main>

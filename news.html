@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News | SCSP Lab, KAIST</title>
+<meta name="description" content="SCSP Lab (단일세포 공간단백체학 연구실) at KAIST Graduate School of Medical Science and Engineering develops mass spectrometry-based technologies for single cell and spatial proteomics to understand tumor heterogeneity and cancer progression.">
+<meta property="og:title" content="SCSP Lab — Single Cell and Spatial Proteomics Lab">
+<meta property="og:description" content="Next-generation mass spectrometry for single cell and spatial proteomics at KAIST.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://scsplab.com/news.html">
+<link rel="canonical" href="https://scsplab.com/news.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="50" cy="50" r="47" fill="%23FFFFFF"/%3E%3Ccircle cx="50" cy="50" r="43" fill="none" stroke="%2315233D" stroke-width="6"/%3E%3Cline x1="30.5" y1="69" x2="30.5" y2="57" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="36.1" y1="69" x2="36.1" y2="50" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="41.7" y1="69" x2="41.7" y2="54" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="47.3" y1="69" x2="47.3" y2="36" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="52.9" y1="69" x2="52.9" y2="47" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="58.5" y1="69" x2="58.5" y2="29" stroke="%23E8812F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="64.1" y1="69" x2="64.1" y2="52" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="69.7" y1="69" x2="69.7" y2="59" stroke="%2314918F" stroke-width="3.4" stroke-linecap="round"/%3E%3Cline x1="25" y1="73" x2="75" y2="73" stroke="%2315233D" stroke-width="3" stroke-linecap="round"/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F7F8FA; --surface:#FFFFFF; --text:#172033; --muted:#4A5568;
+  --accent:#2457A7; --accent-dark:#1A407D; --line:#E2E7EF; --tint:#EAF0F8;
+  --max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans KR",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)} a:hover{color:var(--accent-dark)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--surface);padding:10px 14px;z-index:10}
+.skip:focus{left:8px}
+
+/* header */
+header{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:saturate(1.2) blur(6px)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-name{font-weight:700;font-size:19px;letter-spacing:.02em}
+.brand-sub{font-size:12.5px;color:var(--muted)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:2px}
+nav a{display:block;padding:10px 12px;text-decoration:none;color:var(--text);font-size:15px;font-weight:500;border-radius:6px}
+nav a:hover{background:var(--tint);color:var(--accent-dark)}
+
+/* hero */
+.hero{background:var(--surface);border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);max-width:900px;margin-left:0;gap:56px;align-items:center;padding:88px 0 80px}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+h1{margin:0 0 20px;font-size:clamp(34px,4.6vw,52px);line-height:1.12;letter-spacing:-.015em;font-weight:700}
+.lead{margin:0 0 12px;font-size:19px;color:var(--muted);max-width:40em}
+.lead-ko{margin:0 0 30px;font-size:16px;color:var(--muted);font-family:"Noto Sans KR",sans-serif}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:8px;font-weight:600;font-size:15px;text-decoration:none}
+.btn-primary{background:var(--accent);color:#fff} .btn-primary:hover{background:var(--accent-dark);color:#fff}
+.btn-ghost{border:1px solid #C5CFDD;color:var(--text);background:var(--surface)} .btn-ghost:hover{border-color:var(--accent);color:var(--accent-dark)}
+
+/* sections */
+section{padding:88px 0;border-bottom:1px solid var(--line)}
+section.alt{background:var(--surface)}
+h2{margin:0 0 14px;font-size:clamp(28px,3vw,36px);line-height:1.2;letter-spacing:-.01em}
+.section-intro{max-width:46em;color:var(--muted);margin:0 0 44px}
+h3{margin:0 0 8px;font-size:19px;line-height:1.35}
+
+.overview{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;margin-bottom:56px}
+.overview p{margin:0}
+.overview .big{font-size:21px;line-height:1.55;color:var(--text);font-weight:500}
+
+.sub-h{font-size:22px;margin:0 0 18px}
+.challenges{margin:0 0 56px}
+.ch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.ch{background:var(--surface);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:12px;padding:22px 24px}
+.ch-k{margin:0 0 6px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--c)}
+.ch-t{margin:0;font-size:18px;font-weight:600;line-height:1.45;color:var(--text)}
+@media (max-width:640px){.ch-grid{grid-template-columns:1fr}}
+.plan{margin:0 0 8px}
+.plan-lead{margin:-8px 0 24px;color:var(--muted);font-size:16px}
+.plan-top{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:16px;align-items:stretch}
+.aim{background:var(--bg);border:1px solid var(--line);border-top:5px solid var(--c);border-radius:12px;padding:24px 26px;display:flex;flex-direction:column}
+.aim-n{margin:0;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--c)}
+.aim h4{margin:2px 0 6px;font-size:21px}
+.aim-s{margin:0 0 14px;font-style:italic;color:var(--text);font-size:15.5px}
+.aim-l{margin:0 0 16px;padding-left:20px;font-size:15px;line-height:1.55}
+.aim-l>li{margin-bottom:6px;font-weight:600}
+.aim-l ul{margin:2px 0 0;padding-left:18px;font-weight:400;color:var(--muted);list-style:circle}
+.aim-app{margin:auto 0 0;padding-top:12px;border-top:1px solid rgba(23,32,51,.12);font-size:14.5px;color:var(--muted)}
+.aim-app strong{display:block;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text);margin-bottom:2px}
+.transfer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--accent);width:96px;text-align:center;font-size:13px;font-weight:600;line-height:1.3}
+.aim3{margin-top:16px}
+.aim3 .aim-l{columns:2;column-gap:32px}
+.outcomes{margin-top:16px;background:#FFF7D6;border:1px solid #EBD98F;border-radius:12px;padding:22px 26px}
+.outcomes .aim-n{color:#7A5A00;margin-bottom:8px}
+.outcomes ul{margin:0;padding-left:20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 32px;font-size:15.5px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:900px){.plan-top{grid-template-columns:1fr}.transfer{width:auto;flex-direction:row}.transfer svg{transform:rotate(90deg)}.aim3 .aim-l{columns:1}.outcomes ul{grid-template-columns:1fr}}
+.subnav{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 12px}
+.subnav a{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--text);text-decoration:none;font-size:14.5px;font-weight:500}
+.subnav a:hover{border-color:var(--accent);color:var(--accent-dark)}
+.grp{margin:48px 0 18px;font-size:22px;padding-bottom:10px;border-bottom:2px solid var(--line);scroll-margin-top:90px}
+.empty-grp{margin:0;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px 24px}
+section.alt .card{background:var(--bg)}
+.card-icon{width:44px;height:44px;border-radius:10px;background:var(--tint);display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--accent)}
+.card p{margin:0;font-size:15.5px;color:var(--muted)}
+.card .num{font-size:12.5px;font-weight:600;letter-spacing:.08em;color:var(--accent);display:block;margin-bottom:6px}
+
+.goal{margin-top:40px;background:var(--accent);color:#fff;border-radius:14px;padding:32px 36px;display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center}
+.goal strong{font-size:13px;letter-spacing:.1em;text-transform:uppercase;opacity:.85;flex:none}
+.goal p{margin:0;font-size:19px;line-height:1.55;flex:1 1 420px}
+
+/* people */
+.pi{display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;align-items:start;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:32px}
+.pi-photo{width:220px;aspect-ratio:3/4;border-radius:12px;background:var(--tint);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;overflow:hidden}
+.pi-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+.role{font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
+.pi h3{font-size:26px;margin-bottom:4px}
+.pi .aff{color:var(--muted);margin:0 0 18px}
+.todo{background:#FFF6DB;border:1px solid #E8D48A;color:#5C4A00;border-radius:6px;padding:2px 8px;font-size:14px}
+.join{margin-top:28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+
+.pi .ko{font-size:17px;font-weight:500;color:var(--muted);margin-left:6px}
+.bio{margin:0 0 24px;max-width:46em}
+.cv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;border-top:1px solid var(--line);padding-top:22px}
+.cv h4{margin:0 0 10px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.cv ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:14.5px;line-height:1.5}
+.cv li span{display:block;font-weight:600;font-size:13px;color:var(--muted)}
+@media (max-width:980px){.cv{grid-template-columns:1fr}}
+
+/* publications */
+.pub-note{color:var(--muted);font-size:15px;margin:-4px 0 32px}
+.pub-h{font-size:22px;margin:0 0 18px}
+.themes{display:flex;flex-direction:column;gap:20px;margin:0 0 44px}
+.theme{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px 32px}
+.theme-head{display:flex;align-items:baseline;gap:14px;margin-bottom:12px}
+.theme-num{font-size:14px;font-weight:700;color:var(--accent);letter-spacing:.06em}
+.theme h4{margin:0;font-size:20px;line-height:1.35}
+.theme-desc{margin:0 0 20px;color:var(--muted);font-size:15.5px;max-width:62em}
+.theme-label{margin:0 0 10px;font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.theme-pubs{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:14px}
+.theme-pubs li{font-size:14.5px;line-height:1.55;padding-left:16px;position:relative}
+.theme-pubs li::before{content:"";position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+@media (max-width:640px){.theme{padding:22px 20px}}
+.all{border-top:1px solid var(--line)}
+.all:last-of-type{border-bottom:1px solid var(--line)}
+.all summary{cursor:pointer;padding:18px 4px;font-weight:600;font-size:17px;list-style-position:inside}
+.all summary:hover{color:var(--accent-dark)}
+.yr{margin:18px 0 8px;font-size:15px;color:var(--accent)}
+.plist{margin:0 0 20px;padding-left:20px;display:flex;flex-direction:column;gap:12px;font-size:15px;line-height:1.6}
+.st{display:inline-block;font-size:12px;font-weight:600;border:1px solid #C5CFDD;border-radius:4px;padding:0 6px;margin-right:4px;color:var(--muted)}
+
+.empty{background:var(--surface);border:1px dashed #C5CFDD;border-radius:12px;padding:36px;color:var(--muted);text-align:center}
+
+/* contact */
+footer{background:var(--text);color:#fff}
+.foot{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;padding:72px 0 48px}
+.foot h2{color:#fff;font-size:28px}
+.foot p{margin:0 0 8px;color:#C9D2E0}
+.foot a{color:#fff}
+.foot dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 20px;font-size:15.5px}
+.foot dt{color:#9FADC2;font-weight:500}
+.foot dd{margin:0;color:#fff}
+.copy{border-top:1px solid #2C3A52;padding:20px 0 28px;font-size:13.5px;color:#9FADC2}
+
+@media (max-width:980px){
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-grid{grid-template-columns:1fr;gap:40px;padding:64px 0}
+  .overview{grid-template-columns:1fr;gap:20px}
+  .join{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  section{padding:64px 0}
+  .cards{grid-template-columns:1fr}
+  .pi{grid-template-columns:1fr;padding:24px}
+  .pi-photo{width:180px}
+  .goal{padding:26px 24px}
+  nav a{padding:10px 9px;font-size:14.5px}
+  header{position:static}
+}
+
+/* multi-page */
+.news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.news li{display:grid;grid-template-columns:96px minmax(0,1fr);gap:24px;padding:24px 0;border-top:1px solid var(--line)}
+.news li:last-child{border-bottom:1px solid var(--line)}
+.news time{font-weight:700;color:var(--accent)}
+.news h3{margin:0 0 6px;font-size:18px}
+.news p{margin:0;color:var(--muted);font-size:15.5px}
+@media (max-width:640px){.news li{grid-template-columns:1fr;gap:6px}}
+.brand-mark{width:44px;height:44px}
+.brand-name{font-weight:400;font-size:21px;letter-spacing:0;color:#15233D}
+.brand-name b{font-weight:800}
+.brand-sub{color:#4A5568}
+h1.page-h{margin:0 0 14px;font-size:clamp(30px,3.4vw,40px);line-height:1.2;letter-spacing:-.01em}
+nav a[aria-current="page"]{color:var(--accent-dark);background:var(--tint)}
+.hero{min-height:calc(100vh - 160px);display:flex;align-items:center}
+.hero .wrap{width:100%}
+main section{border-bottom:none}
+.contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:40px;align-items:start}
+.contact-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px 32px}
+.contact-card p{margin:0 0 6px}
+.contact-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:14px 24px}
+.contact-card dt{color:var(--muted);font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding-top:2px}
+.contact-card dd{margin:0}
+.site-foot{background:var(--text);color:#C9D2E0;font-size:14px}
+.site-foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding:22px 24px}
+.site-foot a{color:#fff}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
+@media (max-width:640px){.hero{min-height:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="SCSP Lab home">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="43" fill="none" stroke="#15233D" stroke-width="6"/><line x1="30.5" y1="69" x2="30.5" y2="57" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="36.1" y1="69" x2="36.1" y2="50" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="41.7" y1="69" x2="41.7" y2="54" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="47.3" y1="69" x2="47.3" y2="36" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="52.9" y1="69" x2="52.9" y2="47" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="58.5" y1="69" x2="58.5" y2="29" stroke="#E8812F" stroke-width="3.4" stroke-linecap="round"/><line x1="64.1" y1="69" x2="64.1" y2="52" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="69.7" y1="69" x2="69.7" y2="59" stroke="#14918F" stroke-width="3.4" stroke-linecap="round"/><line x1="25" y1="73" x2="75" y2="73" stroke="#15233D" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="brand-text">
+        <span class="brand-name"><b>SCSP</b> Lab</span>
+        <span class="brand-sub">Single-Cell &amp; Spatial Proteomics</span>
+      </span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="highlights.html">Research Highlights</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="news.html" aria-current="page">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section id="news">
+  <div class="wrap">
+    <h1 class="page-h">News</h1>
+  </div>
+</section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span>© 2026 SCSP Lab, KAIST</span>
+    <span><a href="mailto:dgmun@kaist.ac.kr">dgmun@kaist.ac.kr</a> · <a href="contact.html">Contact</a></span>
+  </div>
+</footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "63c2f4a8bb8e404f83c904158af2001e"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
